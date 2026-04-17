@@ -1,11 +1,12 @@
-import { JetBrains_Mono as FontMono, Inter as FontSans } from "next/font/google"
+// Use local font fallback due to network restrictions
+// In production, Google Fonts will be loaded via CSS import in globals.css
 
-export const fontSans = FontSans({
-  subsets: ["latin"],
+export const fontSans = {
   variable: "--font-sans",
-})
+  className: "font-sans",
+}
 
-export const fontMono = FontMono({
-  subsets: ["latin"],
+export const fontMono = {
   variable: "--font-mono",
-})
+  className: "font-mono",
+}
