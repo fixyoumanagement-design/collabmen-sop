@@ -1,11 +1,13 @@
-import { JetBrains_Mono as FontMono, Inter as FontSans } from "next/font/google"
+import localFont from "next/font/local"
 
-export const fontSans = FontSans({
-  subsets: ["latin"],
+export const fontSans = localFont({
+  src: "../public/fonts/geist-latin.woff2",
   variable: "--font-sans",
+  display: "swap",
 })
 
-export const fontMono = FontMono({
-  subsets: ["latin"],
+export const fontMono = localFont({
+  src: "../public/fonts/geist-mono-latin.woff2",
   variable: "--font-mono",
+  display: "swap",
 })
